@@ -65,7 +65,7 @@ file from a known directory::
 
 This second one is useful if combined with a cronjob; Unfortunately, it's
 sometimes a hard process because crontabs use dbus, and this conflicts with the
-use of `gconftool-2`.
+use of `gsettings`.
 
 Here is a simple tutorial on how to make it work::
 

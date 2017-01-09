@@ -12,7 +12,7 @@ def choose_background(path):
     if len(files) > 0:
         choice = random.randint(0,len(files)-1)
         wall = os.path.join(os.path.abspath(path),files[choice])
-        os.system('gconftool-2 --set /desktop/gnome/background/picture_filename --type string "%s"' % wall)
+        os.system('gsettings set org.gnome.desktop.background picture-uri "%s"' % wall)
         return wall
 
 if __name__ == '__main__':
